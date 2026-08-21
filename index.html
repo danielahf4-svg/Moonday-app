@@ -2,7 +2,9 @@
 <html>
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://unpkg.com/react@18.3.1/umd/react.production.min.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js" crossorigin></script>
 <script src="./support.js"></script>
 </head>
 <body>
@@ -16,48 +18,48 @@
 </template>
 <x-dc>
 <helmet>
-  <meta name="ext-resource-dependency" content="'moonday-icon-cream.png" data-resource-id="iconCream" />
-  <meta name="ext-resource-dependency" content="'moonday-logo-trimmed.png" data-resource-id="logoTrimmed" />
-  <meta name="ext-resource-dependency" content="'hero-interior.jpg" data-resource-id="heroInterior" />
-  <meta name="ext-resource-dependency" content="'iced-latte.jpg" data-resource-id="icedLatte" />
-  <meta name="ext-resource-dependency" content="'nutellatte.jpg" data-resource-id="nutellatte" />
-  <meta name="ext-resource-dependency" content="'mocha-protein.jpg" data-resource-id="mochaProtein" />
-  <meta name="ext-resource-dependency" content="'pumpkin-latte.jpg" data-resource-id="pumpkinLatte" />
-  <meta name="ext-resource-dependency" content="'cappuccino.jpg" data-resource-id="cappuccino" />
-  <meta name="ext-resource-dependency" content="'peruvian-coffee.jpg" data-resource-id="peruv" />
-  <meta name="ext-resource-dependency" content="'espresso.jpg" data-resource-id="espresso" />
-  <meta name="ext-resource-dependency" content="'americano.jpg" data-resource-id="americano" />
-  <meta name="ext-resource-dependency" content="'cortado.jpg" data-resource-id="cortado" />
-  <meta name="ext-resource-dependency" content="'iced-matcha.jpg" data-resource-id="icedMatcha" />
-  <meta name="ext-resource-dependency" content="'strawberry-matcha.jpg" data-resource-id="strawberryMatcha" />
-  <meta name="ext-resource-dependency" content="'banana-bread-latte.jpg" data-resource-id="bananaBreadLatte" />
-  <meta name="ext-resource-dependency" content="'caramel-frappe.jpg" data-resource-id="caramelFrappe" />
-  <meta name="ext-resource-dependency" content="'choc-frappe.jpg" data-resource-id="chocFrappe" />
-  <meta name="ext-resource-dependency" content="'matcha-frappe.jpg" data-resource-id="matchaFrappe" />
-  <meta name="ext-resource-dependency" content="'blueberry-matcha-soda.jpg" data-resource-id="blueberryMatcha" />
-  <meta name="ext-resource-dependency" content="'acai-bowl.jpg" data-resource-id="acaiBowl" />
-  <meta name="ext-resource-dependency" content="'croissant.jpg" data-resource-id="croissant" />
-  <meta name="ext-resource-dependency" content="'chocolate-croissant.jpg" data-resource-id="chocCroissant" />
-  <meta name="ext-resource-dependency" content="'spinach-empanada.jpg" data-resource-id="spinachEmpanada" />
-  <meta name="ext-resource-dependency" content="'blueberry-danish.jpg" data-resource-id="blueberryDanish" />
-  <meta name="ext-resource-dependency" content="'chicken-croissant.jpg" data-resource-id="chickenCroissant" />
-  <meta name="ext-resource-dependency" content="'ham-cheese-croissant.jpg" data-resource-id="hamCheeseCroissant" />
-  <meta name="ext-resource-dependency" content="'bacon-egg-croissant.jpg" data-resource-id="baconEggCroissant" />
-  <meta name="ext-resource-dependency" content="'banana-bread.jpg" data-resource-id="bananaBread" />
-  <meta name="ext-resource-dependency" content="'chocolate-tart.jpg" data-resource-id="chocTart" />
-  <meta name="ext-resource-dependency" content="'carrot-cake.jpg" data-resource-id="carrotCake" />
-  <meta name="ext-resource-dependency" content="'pecan-brownies.jpg" data-resource-id="pecanBrownies" />
-  <meta name="ext-resource-dependency" content="'matcha-pancakes.jpg" data-resource-id="matchaPancakes" />
-  <meta name="ext-resource-dependency" content="'bagel.jpg" data-resource-id="bagel" />
-  <meta name="ext-resource-dependency" content="'avocado-toast.jpg" data-resource-id="avocadoToast" />
-  <meta name="ext-resource-dependency" content="'lemon-blueberry-cake.jpg" data-resource-id="lemonBlueberryCake" />
-  <meta name="ext-resource-dependency" content="'cinnamon-blondie.jpg" data-resource-id="cinnamonBlondie" />
-  <meta name="ext-resource-dependency" content="'pan-con-chicharron.jpg" data-resource-id="panChicharron" />
-  <meta name="ext-resource-dependency" content="'salchicha-huachana.jpg" data-resource-id="salsichHuachana" />
-  <meta name="ext-resource-dependency" content="'ig-storefront.jpg" data-resource-id="igStorefront" />
-  <meta name="ext-resource-dependency" content="'ig-table-spread.jpg" data-resource-id="igTableSpread" />
-  <meta name="ext-resource-dependency" content="'ig-interior.jpg" data-resource-id="igInterior" />
-  <meta name="ext-resource-dependency" content="'ig-entrance.jpg" data-resource-id="igEntrance" />
+  <meta name="ext-resource-dependency" content="moonday-icon-cream.png" data-resource-id="iconCream" />
+  <meta name="ext-resource-dependency" content="moonday-logo-trimmed.png" data-resource-id="logoTrimmed" />
+  <meta name="ext-resource-dependency" content="hero-interior.jpg" data-resource-id="heroInterior" />
+  <meta name="ext-resource-dependency" content="iced-latte.jpg" data-resource-id="icedLatte" />
+  <meta name="ext-resource-dependency" content="nutellatte.jpg" data-resource-id="nutellatte" />
+  <meta name="ext-resource-dependency" content="mocha-protein.jpg" data-resource-id="mochaProtein" />
+  <meta name="ext-resource-dependency" content="pumpkin-latte.jpg" data-resource-id="pumpkinLatte" />
+  <meta name="ext-resource-dependency" content="cappuccino.jpg" data-resource-id="cappuccino" />
+  <meta name="ext-resource-dependency" content="peruvian-coffee.jpg" data-resource-id="peruv" />
+  <meta name="ext-resource-dependency" content="espresso.jpg" data-resource-id="espresso" />
+  <meta name="ext-resource-dependency" content="americano.jpg" data-resource-id="americano" />
+  <meta name="ext-resource-dependency" content="cortado.jpg" data-resource-id="cortado" />
+  <meta name="ext-resource-dependency" content="iced-matcha.jpg" data-resource-id="icedMatcha" />
+  <meta name="ext-resource-dependency" content="strawberry-matcha.jpg" data-resource-id="strawberryMatcha" />
+  <meta name="ext-resource-dependency" content="banana-bread-latte.jpg" data-resource-id="bananaBreadLatte" />
+  <meta name="ext-resource-dependency" content="caramel-frappe.jpg" data-resource-id="caramelFrappe" />
+  <meta name="ext-resource-dependency" content="choc-frappe.jpg" data-resource-id="chocFrappe" />
+  <meta name="ext-resource-dependency" content="matcha-frappe.jpg" data-resource-id="matchaFrappe" />
+  <meta name="ext-resource-dependency" content="blueberry-matcha-soda.jpg" data-resource-id="blueberryMatcha" />
+  <meta name="ext-resource-dependency" content="acai-bowl.jpg" data-resource-id="acaiBowl" />
+  <meta name="ext-resource-dependency" content="croissant.jpg" data-resource-id="croissant" />
+  <meta name="ext-resource-dependency" content="chocolate-croissant.jpg" data-resource-id="chocCroissant" />
+  <meta name="ext-resource-dependency" content="spinach-empanada.jpg" data-resource-id="spinachEmpanada" />
+  <meta name="ext-resource-dependency" content="blueberry-danish.jpg" data-resource-id="blueberryDanish" />
+  <meta name="ext-resource-dependency" content="chicken-croissant.jpg" data-resource-id="chickenCroissant" />
+  <meta name="ext-resource-dependency" content="ham-cheese-croissant.jpg" data-resource-id="hamCheeseCroissant" />
+  <meta name="ext-resource-dependency" content="bacon-egg-croissant.jpg" data-resource-id="baconEggCroissant" />
+  <meta name="ext-resource-dependency" content="banana-bread.jpg" data-resource-id="bananaBread" />
+  <meta name="ext-resource-dependency" content="chocolate-tart.jpg" data-resource-id="chocTart" />
+  <meta name="ext-resource-dependency" content="carrot-cake.jpg" data-resource-id="carrotCake" />
+  <meta name="ext-resource-dependency" content="pecan-brownies.jpg" data-resource-id="pecanBrownies" />
+  <meta name="ext-resource-dependency" content="matcha-pancakes.jpg" data-resource-id="matchaPancakes" />
+  <meta name="ext-resource-dependency" content="bagel.jpg" data-resource-id="bagel" />
+  <meta name="ext-resource-dependency" content="avocado-toast.jpg" data-resource-id="avocadoToast" />
+  <meta name="ext-resource-dependency" content="lemon-blueberry-cake.jpg" data-resource-id="lemonBlueberryCake" />
+  <meta name="ext-resource-dependency" content="cinnamon-blondie.jpg" data-resource-id="cinnamonBlondie" />
+  <meta name="ext-resource-dependency" content="pan-con-chicharron.jpg" data-resource-id="panChicharron" />
+  <meta name="ext-resource-dependency" content="salchicha-huachana.jpg" data-resource-id="salsichHuachana" />
+  <meta name="ext-resource-dependency" content="ig-storefront.jpg" data-resource-id="igStorefront" />
+  <meta name="ext-resource-dependency" content="ig-table-spread.jpg" data-resource-id="igTableSpread" />
+  <meta name="ext-resource-dependency" content="ig-interior.jpg" data-resource-id="igInterior" />
+  <meta name="ext-resource-dependency" content="ig-entrance.jpg" data-resource-id="igEntrance" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
   <style>
@@ -95,9 +97,9 @@
     }
   </style>
 </helmet>
-<div id="md-shell" style="display:flex;justify-content:center;width:100%;max-width:100%;overflow-x:hidden;padding:0;">
-<x-import component-from-global-scope="IOSDevice" from="./ios-frame.jsx" hint-size="402,874" style="margin:0 auto;display:block;width:100%;max-width:100%;">
-  <div id="md-app" style="width:100%;max-width:100%;min-height:100vh;display:flex;flex-direction:column;background:#F5EFE2;position:relative;overflow:hidden;font-family:'Inter',system-ui,sans-serif;">
+<div id="md-shell" style="display:flex;justify-content:center;">
+<x-import component-from-global-scope="IOSDevice" from="./ios-frame.jsx" hint-size="402,874" style="margin:0 auto;display:block;">
+  <div id="md-app" style="width:402px;height:874px;display:flex;flex-direction:column;background:#F5EFE2;position:relative;overflow:hidden;font-family:'Inter',system-ui,sans-serif;">
 
     <sc-if value="{{ booting }}" hint-placeholder-val="{{ true }}">
       <div style="position:absolute;inset:0;z-index:120;background:#12312A;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:26px;animation:md-boot-out 1.6s ease forwards;">
@@ -117,7 +119,7 @@
         <div style="display:flex;flex-direction:column;">
           <div style="padding:54px 20px 14px;display:flex;flex-direction:column;gap:14px;background:#F5EFE2;">
             <div style="display:flex;align-items:center;justify-content:space-between;">
-              <img src="'moonday-logo-trimmed.png" alt="Moonday" style="height:26px;width:auto;display:block;object-fit:contain;">
+              <img src="moonday-logo-trimmed.png" alt="Moonday" style="height:26px;width:auto;display:block;object-fit:contain;">
               <div style="display:flex;background:#E4DAC4;border-radius:999px;padding:3px;gap:2px;">
                 <div onClick="{{ setLangEn }}" style="{{ langBtnEnStyle }}">EN</div>
                 <div onClick="{{ setLangEs }}" style="{{ langBtnEsStyle }}">ES</div>
@@ -471,9 +473,15 @@ const TRANSPARENT_PX = 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQ
 const CATS = [
   {id:'coffee', en:'Coffee', es:'Café'},
   {id:'matcha', en:'Matcha', es:'Matcha'},
+  {id:'frappuccinos', en:'Frappuccinos', es:'Frappuccinos'},
   {id:'specialty', en:'Specialty', es:'Especiales'},
   {id:'bakery', en:'Bakery', es:'Panadería'},
+  {id:'sandwiches', en:'Sandwiches', es:'Sándwiches'},
+  {id:'toast', en:'Toast', es:'Tostadas'},
   {id:'desserts', en:'Desserts', es:'Postres'},
+  {id:'smoothiesBowls', en:'Smoothies & Bowls', es:'Smoothies y Bowls'},
+  {id:'sides', en:'Sides', es:'Acompañamientos'},
+  {id:'drinks', en:'Drinks', es:'Bebidas'},
   {id:'breakfast', en:'Peruvian Brunch', es:'Brunch Peruano'},
 ];
 
@@ -484,6 +492,12 @@ const CAT_ICON_PATHS = {
   bakery: '<path d="M4 12a8 8 0 0 1 16 0Z"/><path d="M3 12h18v2a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-2Z"/><path d="M12 4V2"/>',
   desserts: '<path d="M4 20v-6a8 8 0 0 1 16 0v6"/><path d="M3 20h18"/><path d="M8 11V9M12 10V7M16 11V9"/>',
   breakfast: '<path d="M5 8h11v6a4 4 0 0 1-4 4H9a4 4 0 0 1-4-4V8Z"/><path d="M16 10h1.5a2 2 0 1 1 0 4H16"/><path d="M9 3s-1.5 1.5 0 3M13 3s-1.5 1.5 0 3"/>',
+  frappuccinos: '<path d="M7 4h10l-1 3H8L7 4Z"/><path d="M8 7l1.2 11.4A2 2 0 0 0 11.2 20h1.6a2 2 0 0 0 2-1.6L16 7"/><path d="M9.5 11h5"/>',
+  sandwiches: '<path d="M3 11h18l-1.5 3a2 2 0 0 1-1.8 1.1H6.3A2 2 0 0 1 4.5 14L3 11Z"/><path d="M4 11a8 8 0 0 1 16 0"/><path d="M5 17h14"/>',
+  toast: '<rect x="4" y="5" width="16" height="14" rx="3"/><path d="M8 5V3M12 5V3M16 5V3"/>',
+  smoothiesBowls: '<path d="M4 11h16l-1.4 5.5A3 3 0 0 1 15.7 19H8.3a3 3 0 0 1-2.9-2.5L4 11Z"/><path d="M9 11V8a3 3 0 0 1 6 0v3"/>',
+  sides: '<circle cx="12" cy="12" r="8"/><path d="M8 12h8M12 8v8"/>',
+  drinks: '<path d="M6 3h12l-1.5 15a2.5 2.5 0 0 1-2.5 2.3h-4A2.5 2.5 0 0 1 7.5 18L6 3Z"/><path d="M6.7 9h10.6"/>',
 };
 
 const FILTERS = [
@@ -534,12 +548,12 @@ function custom(milk, sweetener, milkDefault, sweetenerDefault) {
 const PRODUCTS = [
   {id:'iced-latte', cat:'coffee', nameEn:'Iced Latte', nameEs:'Latte Helado', shortEn:'Espresso, milk, ice.', shortEs:'Espresso, leche, hielo.',
    descEn:"Smooth espresso poured over cold milk and ice — Moonday's everyday classic.", descEs:'Espresso suave sobre leche fría y hielo, el clásico de todos los días en Moonday.',
-   price:4.75, tags:['bestSeller'], img:'iced-latte.jpg', ingEn:'Espresso, whole milk, ice', ingEs:'Espresso, leche entera, hielo',
+   price:4.99, tags:['bestSeller'], img:'iced-latte.jpg', ingEn:'Espresso, whole milk, ice', ingEs:'Espresso, leche entera, hielo',
    allEn:'Milk', allEs:'Leche', sizes:SIZES_16OZ, pairing:'almond-croissant', customization: custom(true, true)},
 
-  {id:'nutellatte', cat:'coffee', nameEn:'Nutellatte', nameEs:'Nutellatte', shortEn:'Espresso, milk & Nutella, toasted almonds.', shortEs:'Espresso, leche y Nutella, almendras tostadas.',
+  {id:'nutellatte', cat:'coffee', nameEn:'Nutella Latte', nameEs:'Latte de Nutella', shortEn:'Espresso, milk & Nutella, toasted almonds.', shortEs:'Espresso, leche y Nutella, almendras tostadas.',
    descEn:'Creamy espresso latte made with Nutella, rimmed with toasted almonds and coconut.', descEs:'Latte cremoso preparado con espresso y Nutella, con borde de almendra y coco tostado.',
-   price:5.75, tags:['new','bestSeller','favorite'], img:'nutellatte.jpg', ingEn:'Espresso, milk, Nutella, toasted almond & coconut rim', ingEs:'Espresso, leche, Nutella, borde de almendra y coco tostado',
+   price:6.48, tags:['new','bestSeller','favorite'], img:'nutellatte.jpg', ingEn:'Espresso, milk, Nutella, toasted almond & coconut rim', ingEs:'Espresso, leche, Nutella, borde de almendra y coco tostado',
    allEn:'Milk, hazelnut, tree nuts', allEs:'Leche, avellana, frutos secos', sizes:SIZES_16OZ, pairing:'almond-croissant', customization: custom(true, true)},
 
   {id:'mocha-protein', cat:'coffee', nameEn:'Mocha Protein Boost', nameEs:'Mocha con Proteína', shortEn:'Espresso, chocolate, milk, protein powder.', shortEs:'Espresso, chocolate, leche, proteína en polvo.',
@@ -552,7 +566,7 @@ const PRODUCTS = [
 
   {id:'cappuccino', cat:'coffee', nameEn:'Cappuccino', nameEs:'Capuchino', shortEn:'Espresso with steamed milk foam.', shortEs:'Espresso con espuma de leche.',
    descEn:'Rich espresso topped with silky steamed milk foam.', descEs:'Espresso intenso cubierto con espuma de leche sedosa.',
-   price:4.25, tags:[], img:'cappuccino.jpg', ingEn:'Espresso, steamed milk', ingEs:'Espresso, leche vaporizada', allEn:'Milk', allEs:'Leche', sizes:SIZES_STD, pairing:'banana-bread', customization: custom(true, true)},
+   price:4.99, tags:[], img:'cappuccino.jpg', ingEn:'Espresso, steamed milk', ingEs:'Espresso, leche vaporizada', allEn:'Milk', allEs:'Leche', sizes:SIZES_STD, pairing:'banana-bread', customization: custom(true, true)},
 
   {id:'peruvian-coffee', cat:'coffee', nameEn:'Peruvian Coffee', nameEs:'Café Peruano', shortEn:'Peruvian-roast espresso, steamed milk.', shortEs:'Espresso de tueste peruano, leche vaporizada.',
    descEn:'Espresso made from Peruvian-roast beans topped with silky steamed milk.', descEs:'Espresso hecho con granos de tueste peruano, cubierto con leche vaporizada sedosa.',
@@ -560,11 +574,11 @@ const PRODUCTS = [
 
   {id:'espresso', cat:'coffee', nameEn:'Espresso', nameEs:'Espresso', shortEn:'Double shot, straight up.', shortEs:'Doble shot, puro.',
    descEn:'A concentrated double shot of espresso, rich and bold.', descEs:'Un doble shot de espresso concentrado, intenso y con cuerpo.',
-   price:3.0, tags:[], img:'espresso.jpg', ingEn:'Espresso', ingEs:'Espresso', allEn:'None', allEs:'Ninguno', sizes:SIZES_ONE, pairing:'almond-croissant', customization: custom(false, true)},
+   price:3.99, tags:[], img:'espresso.jpg', ingEn:'Espresso', ingEs:'Espresso', allEn:'None', allEs:'Ninguno', sizes:SIZES_ONE, pairing:'almond-croissant', customization: custom(false, true)},
 
   {id:'americano', cat:'coffee', nameEn:'Americano', nameEs:'Americano', shortEn:'Espresso, hot water.', shortEs:'Espresso, agua caliente.',
    descEn:'Espresso lengthened with hot water for a lighter, clean cup.', descEs:'Espresso alargado con agua caliente, suave y limpio.',
-   price:3.5, tags:[], img:'americano.jpg', ingEn:'Espresso, water', ingEs:'Espresso, agua', allEn:'None', allEs:'Ninguno', sizes:SIZES_STD, pairing:'banana-bread', customization: custom(false, true)},
+   price:4.99, tags:[], img:'americano.jpg', ingEn:'Espresso, water', ingEs:'Espresso, agua', allEn:'None', allEs:'Ninguno', sizes:SIZES_STD, pairing:'banana-bread', customization: custom(false, true)},
 
   {id:'cortado', cat:'coffee', nameEn:'Cortado', nameEs:'Cortado', shortEn:'Espresso cut with warm milk.', shortEs:'Espresso cortado con leche tibia.',
    descEn:'Equal parts espresso and warm milk — oat milk available on request.', descEs:'Partes iguales de espresso y leche tibia, con opción de leche de avena.',
@@ -576,59 +590,59 @@ const PRODUCTS = [
 
   {id:'strawberry-matcha', cat:'matcha', nameEn:'Strawberry Matcha', nameEs:'Matcha con Fresa', shortEn:'Layered strawberry purée, matcha, milk.', shortEs:'Puré de fresa, matcha y leche en capas.',
    descEn:'Fresh strawberry purée layered with matcha and milk over ice.', descEs:'Puré de fresa fresca en capas con matcha y leche sobre hielo.',
-   price:5.75, tags:['new'], sizes:SIZES_16OZ, img:'strawberry-matcha.jpg', ingEn:'Matcha, strawberry purée, milk', ingEs:'Matcha, puré de fresa, leche', allEn:'Milk', allEs:'Leche', customization: custom(true, true), pairing:'strawberry-matcha'},
+   price:7.99, tags:['new'], sizes:SIZES_16OZ, img:'strawberry-matcha.jpg', ingEn:'Matcha, strawberry purée, milk', ingEs:'Matcha, puré de fresa, leche', allEn:'Milk', allEs:'Leche', customization: custom(true, true), pairing:'strawberry-matcha'},
 
   {id:'banana-bread-latte', cat:'coffee', nameEn:'Banana Bread Latte', nameEs:'Latte de Pan de Banana', shortEn:'Espresso, milk, banana bread syrup.', shortEs:'Espresso, leche, jarabe de pan de banana.',
    descEn:'Espresso and milk sweetened with house banana bread syrup, finished with cinnamon.', descEs:'Espresso y leche endulzados con jarabe casero de pan de banana, con un toque de canela.',
-   price:5.25, tags:['new'], sizes:SIZES_16OZ, img:'banana-bread-latte.jpg', ingEn:'Espresso, milk, banana bread syrup, cinnamon', ingEs:'Espresso, leche, jarabe de pan de banana, canela', allEn:'Milk', allEs:'Leche', pairing:'banana-bread', customization: custom(true, true)},
+   price:6.48, tags:['new'], sizes:SIZES_16OZ, img:'banana-bread-latte.jpg', ingEn:'Espresso, milk, banana bread syrup, cinnamon', ingEs:'Espresso, leche, jarabe de pan de banana, canela', allEn:'Milk', allEs:'Leche', pairing:'banana-bread', customization: custom(true, true)},
 
-  {id:'caramel-frappe', cat:'specialty', nameEn:'Caramel Frappé', nameEs:'Frappé de Caramelo', shortEn:'Blended coffee, caramel, whipped cream.', shortEs:'Café batido, caramelo, crema batida.',
+  {id:'caramel-frappe', cat:'frappuccinos', nameEn:'Caramel Frappuccino', nameEs:'Frappuccino de Caramelo', shortEn:'Blended coffee, caramel, whipped cream.', shortEs:'Café batido, caramelo, crema batida.',
    descEn:'Blended iced coffee with caramel swirl, whipped cream and a caramel drizzle.', descEs:'Café helado batido con caramelo, crema batida y un toque de caramelo.',
-   price:6.0, tags:['bestSeller'], sizes:SIZES_16OZ, img:'caramel-frappe.jpg', ingEn:'Espresso, milk, ice, caramel, whipped cream', ingEs:'Espresso, leche, hielo, caramelo, crema batida', allEn:'Milk', allEs:'Leche', sizes:SIZES_ONE, pairing:'almond-croissant'},
+   price:8.99, tags:['bestSeller'], sizes:SIZES_16OZ, img:'caramel-frappe.jpg', ingEn:'Espresso, milk, ice, caramel, whipped cream', ingEs:'Espresso, leche, hielo, caramelo, crema batida', allEn:'Milk', allEs:'Leche', sizes:SIZES_ONE, pairing:'almond-croissant'},
 
-  {id:'choc-red-velvet-frappe', cat:'specialty', nameEn:'Chocolate Red Velvet Frappé', nameEs:'Frappé Chocolate Red Velvet', shortEn:'Blended chocolate, whipped cream, berries.', shortEs:'Chocolate batido, crema batida, frutos rojos.',
+  {id:'choc-red-velvet-frappe', cat:'frappuccinos', nameEn:'Red Velvet Frappuccino', nameEs:'Frappuccino Red Velvet', shortEn:'Blended chocolate, whipped cream, berries.', shortEs:'Chocolate batido, crema batida, frutos rojos.',
    descEn:'Blended chocolate frappé topped with whipped cream, chocolate drizzle and berry compote.', descEs:'Frappé de chocolate batido con crema batida, chocolate y compota de frutos rojos.',
-   price:6.25, tags:['bestSeller'], sizes:SIZES_16OZ, img:'choc-frappe.jpg', ingEn:'Chocolate, milk, ice, whipped cream, berry compote', ingEs:'Chocolate, leche, hielo, crema batida, compota de frutos rojos', allEn:'Milk', allEs:'Leche', sizes:SIZES_ONE, pairing:'lemon-blueberry-cake'},
+   price:8.99, tags:['bestSeller'], sizes:SIZES_16OZ, img:'choc-frappe.jpg', ingEn:'Chocolate, milk, ice, whipped cream, berry compote', ingEs:'Chocolate, leche, hielo, crema batida, compota de frutos rojos', allEn:'Milk', allEs:'Leche', sizes:SIZES_ONE, pairing:'lemon-blueberry-cake'},
 
-  {id:'matcha-frappe', cat:'specialty', nameEn:'Matcha Frappé', nameEs:'Frappé de Matcha', shortEn:'Blended matcha, whipped cream.', shortEs:'Matcha batido, crema batida.',
+  {id:'matcha-frappe', cat:'frappuccinos', nameEn:'Matcha Frappé', nameEs:'Frappé de Matcha', shortEn:'Blended matcha, whipped cream.', shortEs:'Matcha batido, crema batida.',
    descEn:'Ceremonial matcha blended with ice and milk, topped with whipped cream and a dusting of matcha.', descEs:'Matcha ceremonial batido con hielo y leche, coronado con crema batida y un toque de matcha.',
-   price:6.0, tags:['bestSeller'], sizes:SIZES_16OZ, img:'matcha-frappe.jpg', ingEn:'Matcha, milk, ice, whipped cream', ingEs:'Matcha, leche, hielo, crema batida', allEn:'Milk', allEs:'Leche', customization: custom(true, true), sizes:SIZES_ONE, pairing:'matcha-pancakes'},
+   price:6.0, tags:['bestSeller'], sizes:SIZES_16OZ, img:'matcha-frappe.jpg', ingEn:'Matcha, milk, ice, whipped cream', ingEs:'Matcha, leche, hielo, crema batida', allEn:'Milk', allEs:'Leche', customization: custom(true, true), sizes:SIZES_ONE, pairing:'banana-bread'},
 
-  {id:'blueberry-matcha-soda', cat:'matcha', nameEn:'Blueberry Matcha Soda', nameEs:'Soda de Matcha con Arándanos', shortEn:'Layered blueberry, cream, matcha soda.', shortEs:'Arándano, crema y soda de matcha en capas.',
+  {id:'blueberry-matcha-soda', cat:'matcha', nameEn:'Blueberry Matcha', nameEs:'Matcha de Arándano', shortEn:'Layered blueberry, cream, matcha soda.', shortEs:'Arándano, crema y soda de matcha en capas.',
    descEn:'Blueberry compote and cream layered under a sparkling matcha soda.', descEs:'Compota de arándanos y crema en capas bajo una soda de matcha efervescente.',
-   price:5.75, tags:['new'], sizes:SIZES_16OZ, img:'blueberry-matcha-soda.jpg', customization: custom(false, true), ingEn:'Matcha, soda water, blueberry, cream', ingEs:'Matcha, agua con gas, arándano, crema', allEn:'Milk', allEs:'Leche', sizes:SIZES_ONE, pairing:'iced-matcha'},
+   price:7.99, tags:['new'], sizes:SIZES_16OZ, img:'blueberry-matcha-soda.jpg', customization: custom(false, true), ingEn:'Matcha, soda water, blueberry, cream', ingEs:'Matcha, agua con gas, arándano, crema', allEn:'Milk', allEs:'Leche', sizes:SIZES_ONE, pairing:'iced-matcha'},
 
   {id:'mango-smoothie', cat:'specialty', nameEn:'Mango Smoothie', nameEs:'Batido de Mango', shortEn:'Mango, pineapple juice, ice.', shortEs:'Mango, jugo de piña, hielo.',
    descEn:'Ripe mango blended with pineapple juice and ice.', descEs:'Mango maduro batido con jugo de piña y hielo.',
    price:5.75, tags:['vegan','dairyFree','seasonal'], img:null, ingEn:'Mango, pineapple juice, ice', ingEs:'Mango, jugo de piña, hielo', allEn:'None', allEs:'Ninguno', sizes:SIZES_16OZ, pairing:'acai-bowl'},
 
-  {id:'acai-bowl', cat:'specialty', nameEn:'Açaí Bowl', nameEs:'Bowl de Açaí', shortEn:'Açaí, granola, banana, berries.', shortEs:'Açaí, granola, banana, frutos rojos.',
+  {id:'acai-bowl', cat:'smoothiesBowls', nameEn:'Açaí Bowl', nameEs:'Bowl de Açaí', shortEn:'Açaí, granola, banana, berries.', shortEs:'Açaí, granola, banana, frutos rojos.',
    descEn:'House açaí blend topped with granola, banana, mixed berries and honey.', descEs:'Mezcla de açaí de la casa con granola, banana, frutos rojos y miel.',
-   price:8.5, tags:['bestSeller','dairyFree'], img:'acai-bowl.jpg', ingEn:'Açaí, granola, banana, mixed berries, honey', ingEs:'Açaí, granola, banana, frutos rojos, miel', allEn:'Tree nuts, honey', allEs:'Frutos secos, miel', sizes:[{name:'Regular',delta:0},{name:'Large',delta:2.5}], pairing:'mango-smoothie'},
+   price:12.99, tags:['bestSeller','dairyFree'], img:'acai-bowl.jpg', ingEn:'Açaí, granola, banana, mixed berries, honey', ingEs:'Açaí, granola, banana, frutos rojos, miel', allEn:'Tree nuts, honey', allEs:'Frutos secos, miel', sizes:[{name:'Regular',delta:0},{name:'Large',delta:2.5}], pairing:'mango-smoothie'},
 
   {id:'almond-croissant', cat:'bakery', nameEn:'Almond Croissant', nameEs:'Croissant de Almendra', shortEn:'Buttery croissant, almond cream.', shortEs:'Croissant de mantequilla, crema de almendra.',
    descEn:'Buttery croissant filled with almond cream and sliced almonds.', descEs:'Croissant de mantequilla relleno de crema de almendra y almendras fileteadas.',
-   price:4.5, tags:['bestSeller'], img:'croissant.jpg', ingEn:'Butter croissant, almond cream, sliced almonds', ingEs:'Croissant de mantequilla, crema y almendras fileteadas', allEn:'Gluten, milk, tree nuts, egg', allEs:'Gluten, leche, frutos secos, huevo', sizes:SIZES_ONE, pairing:'iced-latte'},
+   price:6.5, tags:['bestSeller'], img:'croissant.jpg', ingEn:'Butter croissant, almond cream, sliced almonds', ingEs:'Croissant de mantequilla, crema y almendras fileteadas', allEn:'Gluten, milk, tree nuts, egg', allEs:'Gluten, leche, frutos secos, huevo', sizes:SIZES_ONE, pairing:'iced-latte'},
 
-  {id:'chocolate-croissant', cat:'bakery', nameEn:'Chocolate Croissant', nameEs:'Croissant de Chocolate', shortEn:'Buttery croissant, dark chocolate filling.', shortEs:'Croissant de mantequilla, relleno de chocolate.',
-   descEn:'Flaky buttery croissant filled with rich dark chocolate.', descEs:'Croissant hojaldrado de mantequilla relleno de chocolate oscuro intenso.',
-   price:4.75, tags:['bestSeller'], img:'chocolate-croissant.jpg', ingEn:'Butter croissant, dark chocolate', ingEs:'Croissant de mantequilla, chocolate oscuro', allEn:'Gluten, milk, egg', allEs:'Gluten, leche, huevo', sizes:SIZES_ONE, pairing:'iced-latte'},
+  {id:'chocolate-croissant', cat:'bakery', nameEn:'Nutella Croissant', nameEs:'Croissant de Nutella', shortEn:'Buttery croissant, Nutella filling.', shortEs:'Croissant de mantequilla, relleno de Nutella.',
+   descEn:'Flaky buttery croissant filled with Nutella.', descEs:'Croissant hojaldrado de mantequilla relleno de Nutella.',
+   price:5.99, tags:['bestSeller'], img:'chocolate-croissant.jpg', ingEn:'Butter croissant, Nutella', ingEs:'Croissant de mantequilla, Nutella', allEn:'Gluten, milk, egg', allEs:'Gluten, leche, huevo', sizes:SIZES_ONE, pairing:'iced-latte'},
 
   {id:'spinach-empanada', cat:'bakery', nameEn:'Spinach Empanada', nameEs:'Empanada de Espinaca', shortEn:'Baked pastry, spinach and cheese filling.', shortEs:'Masa horneada, relleno de espinaca y queso.',
    descEn:'Baked empanada filled with spinach and cheese.', descEs:'Empanada horneada rellena de espinaca y queso.',
-   price:4.5, tags:[], img:'spinach-empanada.jpg', ingEn:'Flour, spinach, cheese', ingEs:'Harina, espinaca, queso', allEn:'Gluten, milk, egg', allEs:'Gluten, leche, huevo', sizes:SIZES_ONE, pairing:'cortado'},
+   price:5.99, tags:[], img:'spinach-empanada.jpg', ingEn:'Flour, spinach, cheese', ingEs:'Harina, espinaca, queso', allEn:'Gluten, milk, egg', allEs:'Gluten, leche, huevo', sizes:SIZES_ONE, pairing:'cortado'},
 
-  {id:'blueberry-danish', cat:'bakery', nameEn:'Blueberry Danish', nameEs:'Danish de Arándanos', shortEn:'Flaky pastry, blueberries, whipped cream.', shortEs:'Hojaldre, arándanos, crema batida.',
-   descEn:'Flaky danish pastry topped with whipped cream, fresh blueberries and lemon.', descEs:'Hojaldre danés cubierto con crema batida, arándanos frescos y limón.',
-   price:5.5, tags:['new'], img:'blueberry-danish.jpg', ingEn:'Puff pastry, blueberries, whipped cream, lemon', ingEs:'Hojaldre, arándanos, crema batida, limón', allEn:'Gluten, milk, egg', allEs:'Gluten, leche, huevo', sizes:SIZES_ONE, pairing:'iced-latte'},
+  {id:'blueberry-danish', cat:'bakery', nameEn:'Blueberry & Lemon Loaf', nameEs:'Bizcocho de Arándano y Limón', shortEn:'Moist lemon loaf, blueberries.', shortEs:'Bizcocho húmedo de limón, arándanos.',
+   descEn:'Moist lemon loaf studded with blueberries.', descEs:'Bizcocho húmedo de limón con arándanos.',
+   price:3.99, tags:['new'], img:'blueberry-danish.jpg', ingEn:'Flour, lemon, blueberries, butter', ingEs:'Harina, limón, arándanos, mantequilla', allEn:'Gluten, milk, egg', allEs:'Gluten, leche, huevo', sizes:SIZES_ONE, pairing:'iced-latte'},
 
-  {id:'chicken-croissant', cat:'bakery', nameEn:'Chicken Salad Croissant', nameEs:'Croissant de Ensalada de Pollo', shortEn:'Shredded chicken salad, tomato.', shortEs:'Ensalada de pollo deshilachado, tomate.',
+  {id:'chicken-croissant', cat:'sandwiches', nameEn:'Chicken Croissant', nameEs:'Croissant de Pollo', shortEn:'Shredded chicken salad, tomato.', shortEs:'Ensalada de pollo deshilachado, tomate.',
    descEn:'Flaky croissant filled with creamy shredded chicken salad and fresh tomato.', descEs:'Croissant hojaldrado relleno de ensalada de pollo deshilachado cremosa y tomate fresco.',
-   price:6.75, tags:['new'], img:'chicken-croissant.jpg', ingEn:'Croissant, shredded chicken, mayo, tomato', ingEs:'Croissant, pollo deshilachado, mayonesa, tomate', allEn:'Gluten, egg', allEs:'Gluten, huevo', sizes:SIZES_ONE, pairing:'iced-latte'},
+   price:14.49, tags:['new'], img:'chicken-croissant.jpg', ingEn:'Croissant, shredded chicken, mayo, tomato', ingEs:'Croissant, pollo deshilachado, mayonesa, tomate', allEn:'Gluten, egg', allEs:'Gluten, huevo', sizes:SIZES_ONE, pairing:'iced-latte'},
 
   {id:'ham-cheese-croissant', cat:'bakery', nameEn:'Ham & Cheese Croissant', nameEs:'Croissant Jamón y Queso', shortEn:'Flaky croissant, ham, melted cheese.', shortEs:'Croissant hojaldrado, jamón, queso fundido.',
    descEn:'Flaky croissant baked with ham and melted Swiss cheese.', descEs:'Croissant hojaldrado horneado con jamón y queso suizo fundido.',
-   price:5.25, tags:[], img:'ham-cheese-croissant.jpg', ingEn:'Croissant, ham, swiss cheese', ingEs:'Croissant, jamón, queso suizo', allEn:'Gluten, milk', allEs:'Gluten, leche', sizes:SIZES_ONE, pairing:'cortado'},
+   price:7.99, tags:[], img:'ham-cheese-croissant.jpg', ingEn:'Croissant, ham, swiss cheese', ingEs:'Croissant, jamón, queso suizo', allEn:'Gluten, milk', allEs:'Gluten, leche', sizes:SIZES_ONE, pairing:'cortado'},
 
   {id:'bacon-egg-croissant', cat:'bakery', nameEn:'Bacon, Egg & Cheese Croissant', nameEs:'Croissant de Tocino, Huevo y Queso', shortEn:'Croissant, bacon, egg, ají amarillo aioli.', shortEs:'Croissant, tocino, huevo, alioli de ají amarillo.',
    descEn:'Buttery croissant packed with crispy bacon, scrambled egg and a touch of ají amarillo.', descEs:'Croissant de mantequilla relleno de tocino crocante, huevo revuelto y un toque de ají amarillo.',
@@ -636,7 +650,7 @@ const PRODUCTS = [
 
   {id:'banana-bread', cat:'bakery', nameEn:'Banana Bread', nameEs:'Pan de Banana', shortEn:'Moist banana bread, walnuts.', shortEs:'Pan de banana húmedo, nueces.',
    descEn:'Moist house-baked banana bread with walnuts.', descEs:'Pan de banana húmedo horneado en casa con nueces.',
-   price:4.0, tags:['vegan'], img:'banana-bread.jpg', ingEn:'Banana, flour, walnuts, plant butter', ingEs:'Banana, harina, nueces, mantequilla vegetal', allEn:'Gluten, tree nuts', allEs:'Gluten, frutos secos', sizes:SIZES_ONE, pairing:'cappuccino'},
+   price:3.99, tags:[], img:'banana-bread.jpg', ingEn:'Banana, flour, walnuts, butter', ingEs:'Banana, harina, nueces, mantequilla', allEn:'Gluten, tree nuts', allEs:'Gluten, frutos secos', sizes:SIZES_ONE, pairing:'cappuccino'},
 
   {id:'chocolate-tart', cat:'desserts', nameEn:'Chocolate Tart Cup', nameEs:'Vasito de Torta de Chocolate', shortEn:'Layered chocolate cake, shaved chocolate.', shortEs:'Torta de chocolate en capas, chocolate rallado.',
    descEn:'Rich layered chocolate cake in a cup, topped with shaved chocolate.', descEs:'Torta de chocolate en capas servida en vasito, cubierta con chocolate rallado.',
@@ -650,33 +664,161 @@ const PRODUCTS = [
    descEn:'Dense fudgy brownie bars topped with toasted pecans.', descEs:'Barras de brownie densas y húmedas cubiertas con nueces tostadas.',
    price:5.0, tags:[], img:'pecan-brownies.jpg', ingEn:'Chocolate, flour, butter, pecans', ingEs:'Chocolate, harina, mantequilla, nueces', allEn:'Gluten, egg, milk, tree nuts', allEs:'Gluten, huevo, leche, frutos secos', sizes:SIZES_ONE, pairing:'iced-latte'},
 
-  {id:'matcha-pancakes', cat:'breakfast', nameEn:'Matcha Pancakes', nameEs:'Panqueques de Matcha', shortEn:'Fluffy matcha pancakes, butter, syrup.', shortEs:'Panqueques de matcha esponjosos, mantequilla, miel.',
-   descEn:'A stack of fluffy matcha pancakes finished with butter and syrup — weekend brunch favorite.', descEs:'Una torre de panqueques de matcha esponjosos con mantequilla y miel, favorito del brunch de fin de semana.',
-   price:8.5, tags:['new','bestSeller'], weekend:true, img:'matcha-pancakes.jpg', ingEn:'Matcha, flour, eggs, milk, butter', ingEs:'Matcha, harina, huevos, leche, mantequilla', allEn:'Gluten, egg, milk', allEs:'Gluten, huevo, leche', sizes:SIZES_ONE, pairing:'iced-matcha'},
-
   {id:'bagel', cat:'breakfast', nameEn:'Bagel with Cream Cheese', nameEs:'Bagel con Queso Crema', shortEn:'Roasted tomatoes, avocado, cream cheese.', shortEs:'Tomates asados, aguacate, queso crema.',
    descEn:'Toasted bagel with cream cheese, roasted cherry tomatoes and fresh avocado.', descEs:'Bagel tostado con queso crema, tomates cherry asados y aguacate fresco.',
    price:7.75, tags:['new'], img:'bagel.jpg', ingEn:'Bagel, cream cheese, cherry tomatoes, avocado', ingEs:'Bagel, queso crema, tomates cherry, aguacate', allEn:'Gluten, milk', allEs:'Gluten, leche', sizes:SIZES_ONE, pairing:'iced-latte'},
 
-  {id:'avocado-toast', cat:'breakfast', nameEn:'Avocado Toast', nameEs:'Tostada de Aguacate', shortEn:'Sourdough, avocado, cherry tomatoes.', shortEs:'Pan de masa madre, aguacate, tomates cherry.',
+  {id:'avocado-toast', cat:'toast', nameEn:'Avocado Toast', nameEs:'Tostada de Aguacate', shortEn:'Sourdough, avocado, cherry tomatoes.', shortEs:'Pan de masa madre, aguacate, tomates cherry.',
    descEn:'Toasted sourdough topped with fresh avocado, melted cheese and roasted cherry tomatoes.', descEs:'Pan de masa madre tostado con aguacate fresco, queso fundido y tomates cherry asados.',
-   price:8.75, tags:['new'], img:'avocado-toast.jpg', ingEn:'Sourdough, avocado, cherry tomatoes, cheese', ingEs:'Pan de masa madre, aguacate, tomates cherry, queso', allEn:'Gluten, milk', allEs:'Gluten, leche', sizes:SIZES_ONE, pairing:'iced-latte'},
+   price:12.99, tags:['new'], img:'avocado-toast.jpg', ingEn:'Sourdough, avocado, cherry tomatoes, cheese', ingEs:'Pan de masa madre, aguacate, tomates cherry, queso', allEn:'Gluten, milk', allEs:'Gluten, leche', sizes:SIZES_ONE, pairing:'iced-latte'},
 
   {id:'lemon-blueberry-cake', cat:'desserts', nameEn:'Lemon Blueberry Cake', nameEs:'Torta de Limón y Arándanos', shortEn:'Bundt cake, blueberries, lemon glaze.', shortEs:'Bizcocho, arándanos, glaseado de limón.',
    descEn:'Moist lemon bundt cake studded with blueberries, finished with a citrus glaze and toasted almonds.', descEs:'Bizcocho húmedo de limón con arándanos, glaseado cítrico y almendras tostadas.',
    price:6.5, tags:['new','seasonal','favorite'], img:'lemon-blueberry-cake.jpg', ingEn:'Flour, blueberries, lemon, butter, almonds', ingEs:'Harina, arándanos, limón, mantequilla, almendras', allEn:'Gluten, egg, milk, tree nuts', allEs:'Gluten, huevo, leche, frutos secos', sizes:SIZES_ONE, pairing:'choc-red-velvet-frappe'},
 
-  {id:'cinnamon-blondie', cat:'desserts', nameEn:'Cinnamon Blondie', nameEs:'Blondie de Canela', shortEn:'Warm, buttery cinnamon bar.', shortEs:'Barra de canela tibia y mantecosa.',
-   descEn:'A dense cinnamon blondie bar, warm and buttery.', descEs:'Una barra de blondie de canela, tibia y mantecosa.',
-   price:5.0, tags:['favorite'], img:'cinnamon-blondie.jpg', ingEn:'Flour, butter, brown sugar, cinnamon, egg', ingEs:'Harina, mantequilla, azúcar moreno, canela, huevo', allEn:'Gluten, egg, milk', allEs:'Gluten, huevo, leche', sizes:SIZES_ONE, pairing:'iced-latte'},
-
   {id:'pan-con-chicharron', cat:'breakfast', nameEn:'Pan con Chicharrón', nameEs:'Pan con Chicharrón', shortEn:'Peruvian fried pork, sweet potato, salsa criolla.', shortEs:'Chicharrón peruano, camote, salsa criolla.',
    descEn:'Traditional Peruvian fried pork sandwich with grilled sweet potato and salsa criolla — weekend brunch special.', descEs:'Sándwich tradicional peruano de chicharrón con camote a la parrilla y salsa criolla, especial de brunch de fin de semana.',
-   price:9.5, tags:['seasonal','bestSeller'], weekend:true, img:'pan-con-chicharron.jpg', ingEn:'Fried pork, bread, sweet potato, pickled onion salsa', ingEs:'Chicharrón, pan, camote, salsa criolla', allEn:'Gluten', allEs:'Gluten', sizes:SIZES_ONE, pairing:'americano'},
+   price:14.0, tags:['seasonal','bestSeller'], weekend:true, img:'pan-con-chicharron.jpg', ingEn:'Fried pork, bread, sweet potato, pickled onion salsa', ingEs:'Chicharrón, pan, camote, salsa criolla', allEn:'Gluten', allEs:'Gluten', sizes:SIZES_ONE, pairing:'americano'},
 
-  {id:'salchicha-huachana', cat:'breakfast', nameEn:'Salchicha Huachana Sandwich', nameEs:'Sándwich de Salchicha Huachana', shortEn:'Traditional Peruvian sausage sandwich.', shortEs:'Sándwich tradicional de salchicha huachana.',
+  {id:'salchicha-huachana', cat:'breakfast', nameEn:'Pan con Salchicha Huachana', nameEs:'Pan con Salchicha Huachana', shortEn:'Traditional Peruvian sausage sandwich.', shortEs:'Sándwich tradicional de salchicha huachana.',
    descEn:'Traditional Peruvian sausage sandwich, a weekend brunch favorite.', descEs:'Sándwich tradicional de salchicha huachana, favorito del brunch de fin de semana.',
-   price:8.75, tags:['seasonal'], weekend:true, img:'salchicha-huachana.jpg', ingEn:'Huachana sausage, bread, onion, cilantro', ingEs:'Salchicha huachana, pan, cebolla, cilantro', allEn:'Gluten', allEs:'Gluten', sizes:SIZES_ONE, pairing:'pan-con-chicharron'},
+   price:12.0, tags:['seasonal'], weekend:true, img:'salchicha-huachana.jpg', ingEn:'Huachana sausage, bread, onion, cilantro', ingEs:'Salchicha huachana, pan, cebolla, cilantro', allEn:'Gluten', allEs:'Gluten', sizes:SIZES_ONE, pairing:'pan-con-chicharron'},
+
+  {id:'cinnamon-latte', cat:'coffee', nameEn:'Cinnamon Latte', nameEs:'Latte de Canela', shortEn:'Espresso, milk, cinnamon.', shortEs:'Espresso, leche, canela.',
+   descEn:'Espresso and steamed milk with a warm hit of cinnamon.', descEs:'Espresso y leche vaporizada con un toque cálido de canela.',
+   price:6.48, tags:[], img:null, ingEn:'Espresso, milk, cinnamon', ingEs:'Espresso, leche, canela', allEn:'Milk', allEs:'Leche', sizes:SIZES_16OZ, pairing:'iced-latte', customization: custom(true, true)},
+
+  {id:'banana-bread-matcha', cat:'matcha', nameEn:'Banana Bread Matcha', nameEs:'Matcha de Pan de Banana', shortEn:'Matcha, milk, banana bread syrup.', shortEs:'Matcha, leche, jarabe de pan de banana.',
+   descEn:'Ceremonial matcha and milk sweetened with house banana bread syrup.', descEs:'Matcha ceremonial y leche endulzados con jarabe casero de pan de banana.',
+   price:7.99, tags:[], img:null, ingEn:'Matcha, milk, banana bread syrup', ingEs:'Matcha, leche, jarabe de pan de banana', allEn:'Milk', allEs:'Leche', sizes:SIZES_16OZ, pairing:'banana-bread', customization: custom(true, true)},
+
+  {id:'raspberry-matcha', cat:'matcha', nameEn:'Raspberry Matcha', nameEs:'Matcha de Frambuesa', shortEn:'Matcha, milk, raspberry syrup.', shortEs:'Matcha, leche, jarabe de frambuesa.',
+   descEn:'Ceremonial matcha layered with raspberry syrup and milk over ice.', descEs:'Matcha ceremonial en capas con jarabe de frambuesa y leche sobre hielo.',
+   price:7.99, tags:[], img:null, ingEn:'Matcha, milk, raspberry syrup', ingEs:'Matcha, leche, jarabe de frambuesa', allEn:'Milk', allEs:'Leche', sizes:SIZES_16OZ, pairing:'strawberry-matcha', customization: custom(true, true, 'whole', 'raspberry')},
+
+  {id:'iced-coconut-espresso', cat:'coffee', nameEn:'Iced Coconut Espresso', nameEs:'Espresso Helado de Coco', shortEn:'Espresso, coconut milk, ice.', shortEs:'Espresso, leche de coco, hielo.',
+   descEn:'Espresso over coconut milk and ice, light and refreshing.', descEs:'Espresso sobre leche de coco y hielo, ligero y refrescante.',
+   price:6.48, tags:[], img:null, ingEn:'Espresso, coconut milk, ice', ingEs:'Espresso, leche de coco, hielo', allEn:'Tree nuts', allEs:'Frutos secos', sizes:SIZES_16OZ, pairing:'espresso', customization: custom(false, true)},
+
+  {id:'cookies-cream-frappe', cat:'frappuccinos', nameEn:'Cookies & Cream Frappuccino', nameEs:'Frappuccino de Galletas y Crema', shortEn:'Blended cookies, milk, whipped cream.', shortEs:'Galletas batidas, leche, crema batida.',
+   descEn:'Cookies blended with milk and ice, topped with whipped cream and cookie crumble.', descEs:'Galletas batidas con leche y hielo, cubiertas con crema batida y trozos de galleta.',
+   price:7.99, tags:[], img:null, ingEn:'Cookies, milk, ice, whipped cream', ingEs:'Galletas, leche, hielo, crema batida', allEn:'Gluten, milk, egg', allEs:'Gluten, leche, huevo', sizes:SIZES_ONE, pairing:'chocolate-croissant'},
+
+  {id:'mocha-frappe', cat:'frappuccinos', nameEn:'Mocha Frappuccino', nameEs:'Frappuccino de Mocha', shortEn:'Blended espresso, chocolate, whipped cream.', shortEs:'Espresso y chocolate batidos, crema batida.',
+   descEn:'Espresso and chocolate blended with milk and ice, topped with whipped cream.', descEs:'Espresso y chocolate batidos con leche y hielo, cubiertos con crema batida.',
+   price:8.99, tags:[], img:null, ingEn:'Espresso, chocolate, milk, ice, whipped cream', ingEs:'Espresso, chocolate, leche, hielo, crema batida', allEn:'Milk', allEs:'Leche', sizes:SIZES_ONE, pairing:'chocolate-croissant'},
+
+  {id:'vanilla-latte-frappe', cat:'frappuccinos', nameEn:'Vanilla Latte Frappuccino', nameEs:'Frappuccino de Vainilla', shortEn:'Blended espresso, vanilla, whipped cream.', shortEs:'Espresso y vainilla batidos, crema batida.',
+   descEn:'Espresso blended with vanilla syrup, milk and ice, topped with whipped cream.', descEs:'Espresso batido con jarabe de vainilla, leche y hielo, cubierto con crema batida.',
+   price:8.99, tags:[], img:null, ingEn:'Espresso, vanilla syrup, milk, ice, whipped cream', ingEs:'Espresso, jarabe de vainilla, leche, hielo, crema batida', allEn:'Milk', allEs:'Leche', sizes:SIZES_ONE, pairing:'almond-croissant'},
+
+  {id:'white-chocolate-frappe', cat:'frappuccinos', nameEn:'White Chocolate Frappuccino', nameEs:'Frappuccino de Chocolate Blanco', shortEn:'Blended white chocolate, whipped cream.', shortEs:'Chocolate blanco batido, crema batida.',
+   descEn:'White chocolate blended with espresso, milk and ice, topped with whipped cream.', descEs:'Chocolate blanco batido con espresso, leche y hielo, cubierto con crema batida.',
+   price:8.99, tags:[], img:null, ingEn:'White chocolate, espresso, milk, ice, whipped cream', ingEs:'Chocolate blanco, espresso, leche, hielo, crema batida', allEn:'Milk', allEs:'Leche', sizes:SIZES_ONE, pairing:'lemon-blueberry-cake'},
+
+  {id:'macchiato', cat:'coffee', nameEn:'Macchiato', nameEs:'Macchiato', shortEn:'Espresso marked with foam.', shortEs:'Espresso marcado con espuma.',
+   descEn:'Espresso "marked" with a dollop of steamed milk foam.', descEs:'Espresso "marcado" con un toque de espuma de leche.',
+   price:4.49, tags:[], img:null, ingEn:'Espresso, milk foam', ingEs:'Espresso, espuma de leche', allEn:'Milk', allEs:'Leche', sizes:SIZES_ONE, pairing:'espresso', customization: custom(true, false)},
+
+  {id:'almost-veggie-sandwich', cat:'sandwiches', nameEn:'Almost Veggie', nameEs:'Almost Veggie', shortEn:'Grilled vegetables, cheese, bread.', shortEs:'Vegetales asados, queso, pan.',
+   descEn:'Grilled vegetables and melted cheese on toasted bread.', descEs:'Vegetales asados y queso fundido sobre pan tostado.',
+   price:14.49, tags:['vegan'], img:null, ingEn:'Bread, grilled vegetables, cheese', ingEs:'Pan, vegetales asados, queso', allEn:'Gluten, milk', allEs:'Gluten, leche', sizes:SIZES_ONE, pairing:'iced-latte'},
+
+  {id:'turkey-club-sandwich', cat:'sandwiches', nameEn:'Turkey Club', nameEs:'Turkey Club', shortEn:'Turkey, bacon, lettuce, tomato.', shortEs:'Pavo, tocino, lechuga, tomate.',
+   descEn:'Sliced turkey, bacon, lettuce and tomato on toasted bread.', descEs:'Pavo en lonjas, tocino, lechuga y tomate sobre pan tostado.',
+   price:14.49, tags:[], img:null, ingEn:'Bread, turkey, bacon, lettuce, tomato', ingEs:'Pan, pavo, tocino, lechuga, tomate', allEn:'Gluten', allEs:'Gluten', sizes:SIZES_ONE, pairing:'americano'},
+
+  {id:'swiss-cuban-sandwich', cat:'sandwiches', nameEn:'Swiss Cuban', nameEs:'Cubano Suizo', shortEn:'Ham, pork, Swiss cheese, pickles.', shortEs:'Jamón, cerdo, queso suizo, pepinillos.',
+   descEn:'Ham, roast pork, Swiss cheese and pickles pressed on Cuban bread.', descEs:'Jamón, cerdo asado, queso suizo y pepinillos prensados en pan cubano.',
+   price:14.49, tags:[], img:null, ingEn:'Cuban bread, ham, pork, swiss cheese, pickles', ingEs:'Pan cubano, jamón, cerdo, queso suizo, pepinillos', allEn:'Gluten, milk', allEs:'Gluten, leche', sizes:SIZES_ONE, pairing:'americano'},
+
+  {id:'italiano-sandwich', cat:'sandwiches', nameEn:'Italiano', nameEs:'Italiano', shortEn:'Salami, provolone, peppers.', shortEs:'Salami, provolone, pimientos.',
+   descEn:'Salami and provolone with roasted peppers on toasted bread.', descEs:'Salami y provolone con pimientos asados sobre pan tostado.',
+   price:14.49, tags:[], img:null, ingEn:'Bread, salami, provolone, roasted peppers', ingEs:'Pan, salami, provolone, pimientos asados', allEn:'Gluten, milk', allEs:'Gluten, leche', sizes:SIZES_ONE, pairing:'espresso'},
+
+  {id:'chicken-salad-sandwich', cat:'sandwiches', nameEn:'Chicken Salad', nameEs:'Ensalada de Pollo', shortEn:'Chicken salad, lettuce, tomato.', shortEs:'Ensalada de pollo, lechuga, tomate.',
+   descEn:'Creamy chicken salad with lettuce and tomato on toasted bread.', descEs:'Ensalada de pollo cremosa con lechuga y tomate sobre pan tostado.',
+   price:14.49, tags:[], img:null, ingEn:'Bread, chicken, mayo, lettuce, tomato', ingEs:'Pan, pollo, mayonesa, lechuga, tomate', allEn:'Gluten, egg', allEs:'Gluten, huevo', sizes:SIZES_ONE, pairing:'iced-latte'},
+
+  {id:'chicken-avocado-sandwich', cat:'sandwiches', nameEn:'Chicken Avocado', nameEs:'Pollo con Aguacate', shortEn:'Grilled chicken, avocado, greens.', shortEs:'Pollo a la parrilla, aguacate, verdes.',
+   descEn:'Grilled chicken with fresh avocado and greens on toasted bread.', descEs:'Pollo a la parrilla con aguacate fresco y verdes sobre pan tostado.',
+   price:14.99, tags:[], img:null, ingEn:'Bread, grilled chicken, avocado, greens', ingEs:'Pan, pollo a la parrilla, aguacate, verdes', allEn:'Gluten', allEs:'Gluten', sizes:SIZES_ONE, pairing:'iced-latte'},
+
+  {id:'breakfast-sandwich', cat:'sandwiches', nameEn:'Breakfast Sandwich', nameEs:'Sándwich de Desayuno', shortEn:'Egg, cheese, choice of meat.', shortEs:'Huevo, queso, carne a elección.',
+   descEn:'Egg and melted cheese on toasted bread with your choice of meat.', descEs:'Huevo y queso fundido sobre pan tostado con carne a elección.',
+   price:11.99, tags:[], img:null, ingEn:'Bread, egg, cheese, meat', ingEs:'Pan, huevo, queso, carne', allEn:'Gluten, egg, milk', allEs:'Gluten, huevo, leche', sizes:SIZES_ONE, pairing:'americano'},
+
+  {id:'caprese-sandwich', cat:'sandwiches', nameEn:'Caprese', nameEs:'Caprese', shortEn:'Mozzarella, tomato, basil, balsamic.', shortEs:'Mozzarella, tomate, albahaca, balsámico.',
+   descEn:'Fresh mozzarella, tomato and basil with a balsamic drizzle on toasted bread.', descEs:'Mozzarella fresca, tomate y albahaca con un toque de balsámico sobre pan tostado.',
+   price:14.49, tags:['vegan'], img:null, ingEn:'Bread, mozzarella, tomato, basil, balsamic', ingEs:'Pan, mozzarella, tomate, albahaca, balsámico', allEn:'Gluten, milk', allEs:'Gluten, leche', sizes:SIZES_ONE, pairing:'espresso'},
+
+  {id:'plain-croissant', cat:'bakery', nameEn:'Plain Croissant', nameEs:'Croissant Simple', shortEn:'Buttery, flaky croissant.', shortEs:'Croissant mantecoso y hojaldrado.',
+   descEn:'A classic buttery, flaky croissant.', descEs:'Un croissant clásico, mantecoso y hojaldrado.',
+   price:3.49, tags:[], img:null, ingEn:'Butter croissant', ingEs:'Croissant de mantequilla', allEn:'Gluten, milk, egg', allEs:'Gluten, leche, huevo', sizes:SIZES_ONE, pairing:'iced-latte'},
+
+  {id:'mini-quiches', cat:'bakery', nameEn:'Mini Quiches', nameEs:'Mini Quiches', shortEn:'Savory baked egg quiches.', shortEs:'Quiches horneados de huevo.',
+   descEn:'A savory batch of mini baked egg quiches.', descEs:'Una porción de mini quiches horneados de huevo.',
+   price:7.99, tags:[], img:null, ingEn:'Egg, cream, cheese, flour', ingEs:'Huevo, crema, queso, harina', allEn:'Gluten, egg, milk', allEs:'Gluten, huevo, leche', sizes:SIZES_ONE, pairing:'americano'},
+
+  {id:'cookie', cat:'bakery', nameEn:'Cookie', nameEs:'Galleta', shortEn:'Fresh baked cookie.', shortEs:'Galleta recién horneada.',
+   descEn:'A fresh baked cookie.', descEs:'Una galleta recién horneada.',
+   price:1.99, tags:[], img:null, ingEn:'Flour, butter, sugar, chocolate', ingEs:'Harina, mantequilla, azúcar, chocolate', allEn:'Gluten, egg, milk', allEs:'Gluten, huevo, leche', sizes:SIZES_ONE, pairing:'iced-latte'},
+
+  {id:'muffin', cat:'bakery', nameEn:'Muffin', nameEs:'Muffin', shortEn:'Fresh baked muffin.', shortEs:'Muffin recién horneado.',
+   descEn:'A fresh baked muffin.', descEs:'Un muffin recién horneado.',
+   price:3.99, tags:[], img:null, ingEn:'Flour, sugar, butter, egg', ingEs:'Harina, azúcar, mantequilla, huevo', allEn:'Gluten, egg, milk', allEs:'Gluten, huevo, leche', sizes:SIZES_ONE, pairing:'americano'},
+
+  {id:'brownie', cat:'bakery', nameEn:'Brownie', nameEs:'Brownie', shortEn:'Fudgy chocolate brownie.', shortEs:'Brownie de chocolate húmedo.',
+   descEn:'A dense, fudgy chocolate brownie.', descEs:'Un brownie de chocolate denso y húmedo.',
+   price:3.99, tags:[], img:null, ingEn:'Chocolate, flour, butter, egg', ingEs:'Chocolate, harina, mantequilla, huevo', allEn:'Gluten, egg, milk', allEs:'Gluten, huevo, leche', sizes:SIZES_ONE, pairing:'iced-latte'},
+
+  {id:'veggie-toast', cat:'toast', nameEn:'Veggie Toast', nameEs:'Tostada Vegetariana', shortEn:'Sourdough, grilled vegetables, cheese.', shortEs:'Masa madre, vegetales asados, queso.',
+   descEn:'Toasted sourdough topped with grilled vegetables and melted cheese.', descEs:'Pan de masa madre tostado con vegetales asados y queso fundido.',
+   price:12.99, tags:['vegan'], img:null, ingEn:'Sourdough, grilled vegetables, cheese', ingEs:'Pan de masa madre, vegetales asados, queso', allEn:'Gluten, milk', allEs:'Gluten, leche', sizes:SIZES_ONE, pairing:'iced-latte'},
+
+  {id:'egg-salad-ham-toast', cat:'toast', nameEn:'Egg Salad with Ham Toast', nameEs:'Tostada de Ensalada de Huevo y Jamón', shortEn:'Sourdough, egg salad, ham.', shortEs:'Masa madre, ensalada de huevo, jamón.',
+   descEn:'Toasted sourdough topped with creamy egg salad and ham.', descEs:'Pan de masa madre tostado con ensalada de huevo cremosa y jamón.',
+   price:12.99, tags:[], img:null, ingEn:'Sourdough, egg, mayo, ham', ingEs:'Pan de masa madre, huevo, mayonesa, jamón', allEn:'Gluten, egg, milk', allEs:'Gluten, huevo, leche', sizes:SIZES_ONE, pairing:'americano'},
+
+  {id:'banana-berry-smoothie', cat:'smoothiesBowls', nameEn:'Banana Berry', nameEs:'Banana Berry', shortEn:'Banana, mixed berries, milk.', shortEs:'Banana, frutos rojos, leche.',
+   descEn:'Banana and mixed berries blended with milk and ice.', descEs:'Banana y frutos rojos batidos con leche y hielo.',
+   price:9.89, tags:['vegan'], img:null, ingEn:'Banana, mixed berries, milk, ice', ingEs:'Banana, frutos rojos, leche, hielo', allEn:'Milk', allEs:'Leche', sizes:SIZES_ONE, pairing:'acai-bowl'},
+
+  {id:'tropical-dream-smoothie', cat:'smoothiesBowls', nameEn:'Tropical Dream', nameEs:'Tropical Dream', shortEn:'Mango, pineapple, coconut.', shortEs:'Mango, piña, coco.',
+   descEn:'Mango, pineapple and coconut blended with ice.', descEs:'Mango, piña y coco batidos con hielo.',
+   price:8.89, tags:['vegan','dairyFree'], img:null, ingEn:'Mango, pineapple, coconut, ice', ingEs:'Mango, piña, coco, hielo', allEn:'Tree nuts', allEs:'Frutos secos', sizes:SIZES_ONE, pairing:'acai-bowl'},
+
+  {id:'pineapple-surprise-smoothie', cat:'smoothiesBowls', nameEn:'Pineapple Surprise', nameEs:'Pineapple Surprise', shortEn:'Pineapple, citrus, ice.', shortEs:'Piña, cítricos, hielo.',
+   descEn:'Pineapple blended with citrus juice and ice.', descEs:'Piña batida con jugo cítrico y hielo.',
+   price:8.89, tags:['vegan','dairyFree'], img:null, ingEn:'Pineapple, citrus juice, ice', ingEs:'Piña, jugo cítrico, hielo', allEn:'None', allEs:'Ninguno', sizes:SIZES_ONE, pairing:'acai-bowl'},
+
+  {id:'coco-oats-smoothie', cat:'smoothiesBowls', nameEn:'Coco Oats', nameEs:'Coco Oats', shortEn:'Coconut milk, oats, banana.', shortEs:'Leche de coco, avena, banana.',
+   descEn:'Coconut milk, oats and banana blended together.', descEs:'Leche de coco, avena y banana batidos juntos.',
+   price:9.89, tags:['vegan','dairyFree'], img:null, ingEn:'Coconut milk, oats, banana', ingEs:'Leche de coco, avena, banana', allEn:'Tree nuts, gluten', allEs:'Frutos secos, gluten', sizes:SIZES_ONE, pairing:'acai-bowl'},
+
+  {id:'orange-juice', cat:'smoothiesBowls', nameEn:'Orange Juice', nameEs:'Jugo de Naranja', shortEn:'Fresh squeezed orange juice.', shortEs:'Jugo de naranja recién exprimido.',
+   descEn:'Fresh squeezed orange juice.', descEs:'Jugo de naranja recién exprimido.',
+   price:5.0, tags:['vegan','dairyFree'], img:null, ingEn:'Orange', ingEs:'Naranja', allEn:'None', allEs:'Ninguno', sizes:SIZES_ONE, pairing:'avocado-toast'},
+
+  {id:'mozzarella-sticks', cat:'sides', nameEn:'Mozzarella Sticks', nameEs:'Palitos de Mozzarella', shortEn:'Breaded, fried mozzarella.', shortEs:'Mozzarella empanizada y frita.',
+   descEn:'Breaded mozzarella sticks, fried until golden.', descEs:'Palitos de mozzarella empanizados, fritos hasta dorar.',
+   price:9.99, tags:[], img:null, ingEn:'Mozzarella, breadcrumbs, egg', ingEs:'Mozzarella, pan rallado, huevo', allEn:'Gluten, milk, egg', allEs:'Gluten, leche, huevo', sizes:SIZES_ONE, pairing:'beer'},
+
+  {id:'french-fries', cat:'sides', nameEn:'French Fries', nameEs:'Papas Fritas', shortEn:'Crispy fried potatoes.', shortEs:'Papas fritas crocantes.',
+   descEn:'Crispy golden French fries.', descEs:'Papas fritas doradas y crocantes.',
+   price:5.99, tags:['vegan','dairyFree'], img:null, ingEn:'Potato, oil, salt', ingEs:'Papa, aceite, sal', allEn:'None', allEs:'Ninguno', sizes:SIZES_ONE, pairing:'beer'},
+
+  {id:'sweet-potato-fries', cat:'sides', nameEn:'Sweet Potato Fries', nameEs:'Papas Fritas de Camote', shortEn:'Crispy fried sweet potatoes.', shortEs:'Camote frito crocante.',
+   descEn:'Crispy fried sweet potato fries.', descEs:'Papas de camote fritas y crocantes.',
+   price:5.99, tags:['vegan','dairyFree'], img:null, ingEn:'Sweet potato, oil, salt', ingEs:'Camote, aceite, sal', allEn:'None', allEs:'Ninguno', sizes:SIZES_ONE, pairing:'beer'},
+
+  {id:'mimosas', cat:'drinks', nameEn:'Mimosas', nameEs:'Mimosas', shortEn:'Sparkling wine, orange juice.', shortEs:'Vino espumante, jugo de naranja.',
+   descEn:'Sparkling wine with fresh orange juice.', descEs:'Vino espumante con jugo de naranja fresco.',
+   price:8.0, tags:[], img:null, ingEn:'Sparkling wine, orange juice', ingEs:'Vino espumante, jugo de naranja', allEn:'Sulfites', allEs:'Sulfitos', sizes:SIZES_ONE, pairing:'pan-con-chicharron'},
+
+  {id:'beer', cat:'drinks', nameEn:'Beer', nameEs:'Cerveza', shortEn:'Cold beer.', shortEs:'Cerveza fría.',
+   descEn:'A cold beer.', descEs:'Una cerveza fría.',
+   price:5.99, tags:[], img:null, ingEn:'Beer', ingEs:'Cerveza', allEn:'Gluten', allEs:'Gluten', sizes:SIZES_ONE, pairing:'french-fries'},
 ];
 
 function findProduct(id){ return PRODUCTS.find(p => p.id === id); }
